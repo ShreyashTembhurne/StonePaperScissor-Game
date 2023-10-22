@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body{
+            text-align: center ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stone Paper Scissor Game</h1>
+    <button onclick="
+        const userChoiceMsg = 'You have closen Stone';
+        let randomNumber = Math.random() * 3;
+        let computerChoice;
+        if (randomNumber > 0 && randomNumber <=1){
+            computerChoice = 'Stone';
+        }else if (randomNumber >1 && randomNumber <=2){
+            computerChoice = 'Paper';
+        }else{
+            computerChoice = 'Scissor';
+        }
+        const computerChoiceMsg = 'Computer choice is'  +computerChoice;
+        
+        let resultMsg;
+        if(computerChoice === 'Scissor'){
+            resultMsg = 'You Won !!!';
+        } else if(computerChoice === 'Stone'){
+            resultMsg = 'Tie !!!';
+        }else if(computerChoice === 'Paper'){
+            resultMsg = 'Computer Won!!!';
+        }
+
+        alert('You have closen Stone. Computer choice is '+ computerChoice + ' and ' + resultMsg);
+
+    ">Stone
+    </button>
+    <button onclick="
+     userChoiceMsg = 'You have closen Paper';
+     randomNumber = Math.random() * 3;
+     
+    if (randomNumber > 0 && randomNumber <=1){
+        computerChoice = 'Stone';
+    }else if (randomNumber >1 && randomNumber <=2){
+        computerChoice = 'Paper';
+    }else{
+        computerChoice = 'Scissor';
+    }
+     computerChoiceMsg = 'Computer choice is'  +computerChoice;
+    
+     
+    if(computerChoice === 'Scissor'){
+        resultMsg = 'Computer Won !!!';
+    } else if(computerChoice === 'Stone'){
+        resultMsg = 'You Won !!!';
+    }else if(computerChoice === 'Paper'){
+        resultMsg = 'Tie!!!';
+    }
+
+    alert('You have closen Paper. Computer choice is '+ computerChoice + ' and ' + resultMsg)
+    ">Paper</button>
+
+    <button onclick="
+     userChoiceMsg = 'You have closen Scissor';
+     randomNumber = Math.random() * 3;
+    
+    if (randomNumber > 0 && randomNumber <=1){
+        computerChoice = 'Stone';
+    }else if (randomNumber >1 && randomNumber <=2){
+        computerChoice = 'Paper';
+    }else{
+        computerChoice = 'Scissor';
+    }
+     computerChoiceMsg = 'Computer choice is'  +computerChoice;
+    
+    if(computerChoice === 'Scissor'){
+        resultMsg = 'Tie !!!';
+    } else if(computerChoice === 'Stone'){
+        resultMsg = 'Computer Won !!!';
+    }else if(computerChoice === 'Paper'){
+        resultMsg = 'You Won!!!';
+    }
+
+    alert('You have closen Scissor. Computer choice is '+ computerChoice + ' and ' + resultMsg)
+    ">Scissor</button>
+
+</body>
+</html>
